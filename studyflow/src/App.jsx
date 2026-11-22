@@ -1,6 +1,7 @@
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import { StudyProvider } from "./context/StudyContext";
 import SiteLayout from "./layouts/SiteLayout";
 
 import DashboardPage from "./pages/DashboardPage";
@@ -11,21 +12,19 @@ import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return (
-    <BrowserRouter>
-      <SiteLayout>
-        <Routes>
-          <Route path="/" element={<DashboardPage />} />
-
-          <Route path="/tasks" element={<TasksPage />} />
-
-          <Route path="/focus" element={<FocusPage />} />
-
-          <Route path="/settings" element={<SettingsPage />} />
-
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
-      </SiteLayout>
-    </BrowserRouter>
+    <StudyProvider>
+      <BrowserRouter>
+        <SiteLayout>
+          <Routes>
+            <Route path="/" element={<DashboardPage />} />
+            <Route path="/tasks" element={<TasksPage />} />
+            <Route path="/focus" element={<FocusPage />} />
+            <Route path="/settings" element={<SettingsPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </SiteLayout>
+      </BrowserRouter>
+    </StudyProvider>
   );
 }
 
