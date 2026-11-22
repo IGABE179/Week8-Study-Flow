@@ -1,16 +1,134 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# StudyFlow – Study Task Management Application
 
-Currently, two official plugins are available:
+## About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+StudyFlow is a simple and responsive study management application built with React. It helps students organize their academic tasks, track their progress, and manage their study time.
 
-## React Compiler
+The application provides a central place where students can create tasks, monitor completed work, and stay focused on their learning goals.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the Oxlint configuration
+- **Dashboard:** View total tasks, completed tasks, pending tasks, and overall progress.
+- **Task Management:** Add, edit, delete, and complete study tasks.
+- **Search:** Find tasks using their titles or subjects.
+- **Filtering:** View all, completed, or pending tasks.
+- **Sorting:** Organize tasks by newest, oldest, or due date.
+- **Focus Timer:** Use a 25-minute study timer and a 5-minute break timer.
+- **Settings:** Customize your name, daily study goal, notifications, and dark mode.
+- **Local Storage:** Save tasks and settings in the browser so they remain available after refreshing.
+- **Responsive Design:** Use the application on desktop computers, tablets, and mobile devices.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Technologies Used
+
+- React 19
+- JavaScript
+- Vite
+- Tailwind CSS
+- React Router DOM
+- HTML5
+- CSS3
+- Browser Local Storage
+
+## Getting Started
+
+Follow these instructions to run the project on your computer.
+
+### Prerequisites
+
+You need to have the following installed:
+
+- Node.js
+- npm
+- Git
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+2. Navigate to the project folder:
+
+```bash
+cd studyflow
+```
+
+3. Install the dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+5. Open the local URL displayed in your terminal, usually:
+
+```text
+http://localhost:5173/
+```
+
+## Building for Production
+
+To create a production build, run:
+
+```bash
+npm run build
+```
+
+To preview the production build locally, run:
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+```text
+studyflow/
+├── public/
+├── src/
+│   ├── components/
+│   ├── context/
+│   ├── hooks/
+│   ├── layouts/
+│   ├── pages/
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## Data Storage
+
+StudyFlow uses the browser's Local Storage to save tasks and user settings. This means data remains available when the browser is refreshed on the same browser and device.
+
+## Future Improvements
+
+- Add user authentication.
+- Add notifications and study reminders.
+- Include weekly and monthly study reports.
+- Add more study productivity tools.
+
+## Live Demo
+
+Coming soon.
+
+## Presentation Video
+
+Coming soon.
+
+## Author
+
+Developed as a Software Engineering assignment.
+
+**Project Name:** StudyFlow
